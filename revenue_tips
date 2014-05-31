@@ -1,5 +1,5 @@
 Sponsored colleges in search results
-    OR show college above in search results
+    OR show college above in search results <not good>
 
 store data for each college: (which can be sold to the college)
 
@@ -8,9 +8,11 @@ store data for each college: (which can be sold to the college)
     location of users searching
 
     discipline wise classification of users within the college
+
+    the number of users going to the website of college through us could be a factor on which we can negotiate
     
     
-College of the Month
+College of the Month <could be too much... would require much intervention from us and daily update and algorithm to find the best? could be quarterly>
 
     (best for revenue generation)
 
@@ -21,3 +23,9 @@ College of the Month
 college performance: criteria
 instead of ranking
 
+
+
+new idea.. 
+http://www.spoj.com/ranks/institutions/
+this is the website I used to solve the coding problems on, this gives the ranking itself.. we can leverage it..
+we can tell best place for a coding enthusiast using such data.
