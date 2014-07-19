@@ -1,0 +1,158 @@
+The National Institute of Technology Calicut (NITC), formerly the Calicut Regional Engineering College (CREC), is a federally funded technical university and an institute of national importance governed by an act passed by the Parliament of India. The campus is situated at Chathamangalam, 22 kilometres (14 mi) north east of Kozhikode, formerly known as Calicut, on the Kozhikode–Mukkam Road.[3] It was established in 1961 and was known as Calicut Regional Engineering College (CREC) until 2002. It is one of the National Institutes of Technology established by the Government of India for imparting high standard technical education to students from all over the country. The college is among the very few institutions in the country to host a Supercomputer of its own.[4]
+
+Established	1961
+Type	Public
+Chairman	C. G. Krishnadas Nair[1]
+Director	M. N. Bandyopadhyay[2]
+Academic staff	205
+Undergraduates	4200
+Postgraduates	1100
+Location	Calicut, Kerala, India
+11.321973°N 75.935386°ECoordinates: 11.321973°N 75.935386°E
+Campus	300 acres (1.2 km2), rural/semi-urban
+Website	www.nitc.ac.in
+
+Academic departments[edit]
+Engineering departments[edit]
+Department of Architecture
+Department of Civil Engineering
+Department of Computer Science
+Department of Chemical Engineering
+Department of Electrical Engineering
+Department of Electronics and Communication Engineering
+Department of Mechanical Engineering
+Science departments[edit]
+
+
+Department of Physics at NIT Calicut
+Department of Chemistry
+Department of Mathematics
+Department of Physics
+Schools[edit]
+School of Biotechnology
+School of Management Studies
+School of Nano Science and Technology
+Allied department[edit]
+Department of Physical Education
+
+Rankings[edit]
+Institute rankings
+Engineering – India
+India Today[14]	5
+Outlook India[15]	—
+Dataquest[16]	—
+Government colleges:
+Mint[17]	15
+NITC was ranked 5 (Factual Rank 7) by the India Today Best Engineering colleges 2012.[14] In rankings limited to government institutes it was ranked 18 by the Mint Top 50 Government Engineering Colleges of 2009.[17] NITC Architecture department is ranked 5 by the Outlook India Best Architecture colleges in India 2013.
+
+Facilities[edit]
+Hostels[edit]
+
+
+Ladies' Hostel
+NITC is a fully residential institution with 13 hostels on the campus to accommodate students. There are 12 boys' hostels, named by letters A, B, C, D, E, F, F', G, PG I, PG II,IH and newly formed Mega Boys Hostel.Four girls' hostels (LH). A, B,C and Mega Ladies Hostel Hostels have triple rooms but accommodate four students per room due to increase in intake of students and shortage of hostel facilities. D, E, F, G, PG I, and PG II are single-seated but, due to high intake of students, some rooms are being used as doubles. Professor's Apartments (FB) are also rented out due to shortage of hostel facilities.
+
+A and PG I hostels accommodate I year B.Tech students. II year B.Tech students are accommodated in the B hostel and FB apartments. III year B.Tech students are accommodated in C, and Mega hostel. Final year B.Tech students are accommodated in D, E, F,G and PG-II hostels. M.Tech. and MCA students reside in apartments. All hostels apart from A and PG-1 are well connected through a 100 Mbit/s LAN network.
+
+The boys' hostels are close to the academic area while girls' hostels and Professor's Apartments are in the residential campus. There are around 4500 students in NITC hostels. A mini-canteen is available in the hostel premises.
+
+Each hostel has its own mess and students are allowed to join the mess of any hostel with an exception of A and PG I which are exclusive for first years. The type of food served in the hostel messes are as follows:
+
+Cosmopolitan: A, PG I
+Vegetarian:B(North Indian), C (South Indian), E(North Indian)
+Non-vegetarian: F,G&PG-II(North & South mixed),PG II (Kerala)
+Students are permitted to use their own computers in their rooms. All hostels are connected to the Campus Networking Center through which internet connectivity is provided for free. Every year, students set up LANs in the hostels according to their needs. Each hostel contains a common room with cable TV,daily newspaper and indoor games faciities.
+
+There are three hostels in NIT Calicut to accommodate female undergraduate, postgraduate and Ph.D. programme students. Two cosmopolitan messes are available in the girls' hostel premises. Other facilities like mini-canteen, indoor shuttle court, gymnasium and an extension of the Co-operative Society store are available in the girls' hostel.
+
+Sports[edit]
+NITC has a gymnasium, swimming pool, an open air theatre, an auditorium and facilities for outdoor sports like tennis, football, volleyball, badminton, roller skating, hockey and basketball. It also has a cricket ground where Ranji Trophy matches have been played.[18]
+
+Central Computer Center[edit]
+
+
+The Central Computer Center
+The Central Computer Center[19] is a central computing facility which caters to the computing requirements of the whole community of this institution. The working hours of this centre is on round the clock on all working days except Republic day, Independence day, Thiruvonam, Vijayadashami, Gandhi Jayanthi, Bakrid & Christmas.
+
+The centre is equipped with three IBM X-series servers, one Dell PowerEdge 6600 Quad Processor Xeon Server, six Dell PowerEdge 2600 Dual Processor Server and one Sunfire V210 Server. The Desktops and Thin clients are connected to the servers through gigabit switches and CAT6 UTP cables. The centre is connected to the campus-networking centre with backbone of 32Mbit/s through a Nortel L3 switch and in turn to internet.
+
+Central Library[edit]
+NITC's Central Library, with more than 100,000 books, is one of the largest technical libraries in India. It subscribes to more than 200 print journals. The institute has a digital library, Nalanda (Network of Automated Library and Archives), which houses online resources. Users of the institute and networked institutions can access around 17,000 journals, proceedings, databases, electronic theses, dissertations and online courses at Nalanda. It is part of the Indest consortium, which networks the libraries at technical institutions in India.
+
+NIT Calicut's supercomputer, Purna (Parallel Universal Remote Numerical Analyser), is accessible from anywhere in the campus and is provided for the use of all students and faculty members. PURNA has a peak speed of 1.5 Tera Flops.[4]
+
+Technology Business Incubator[edit]
+The Technology Business Incubator (TBI) at NIT Calicut was set up with the help of the Department of Science and Technology, Government of India and the National Science and Technology Entrepreneurship Development Board (NSTEDB). Its objective is to help the development of start-up ventures in electronics and IT.TBI provide workspace with shared office facilities with emphasis on business and professional services necessary for nurturing and supporting early stage growth of technology and technology based enterprises.[20][21]
+
+Culture and student life[edit]
+NIT Calicut holds two major annual events, the techno-management festival Tathva, held in the monsoon semester and the cultural festival Ragam, which is held in the winter semester.
+
+Tathva[edit]
+Main article: Tathva
+Tathva is the annual techno-management fest organised by the college. It is usually held during the month of September and lasts for four days. Tathva has come to be regarded as one among the biggest technical festivals of South India. It has been held every year since its inception in 2001. Aimed at inspiring innovation and technical interest among students and the public, Tathva has played host to lectures, seminars, workshops by companies like ParaMek Technologies, competitions, paper presentations, exhibitions, quizzes, model displays and robotics events. A.P.J. Abdul Kalam, G. Madhavan Nair, Harold Kroto, Johannes Orphal, Jimmy Wales, and Suhas Gopinath, were some of the eminent guests in previous editions of Tathva.
+
+Ragam[edit]
+
+
+Open Air Theater
+Main article: Ragam (festival)
+Ragam is the cultural festival of NITC. Colleges and universities from Kerala and outside compete in events like trivia quizzes, dance competitions, rock shows and music concerts. Some of the performers who have performed in previous years include Shaan, Sunidhi Chauhan, Blaaze, Shankar Mahadevan, Kartik, Benny Dayal, Stephen Devassy and Parikrama. 'Breathe Floyd' a Pink Floyd tribute band from the UK performed during Ragam 2009. Ragam 2010 featured KK, Naresh Iyer and "Higher on Maiden" a tribute band to Iron Maiden.
+
+Ragam is held in the memory of former student P. Rajan who died after being held (ostensibly for being a Naxalite) in police custody.[22]
+
+Student organisations[edit]
+The student organisations at NITC include Robotics Interest Group (RIG), The Literary and Debating Club (LND), The Forum for Dance and Dramatics(DND), Computer Science & Engineering Association(CSEA), Enquire (the NITC Quiz Club), The Music Club, Club Mathematica, Audio Visual Club (AVC), Team Unwired (Engineering and Technology Club), Society of Automotive Engineers (SAE) student chapter, the Indian Society for Technical Education (ISTE) Students' Chapter,[23] The Industrial and Planning Forum (IPF), the Nature Club, Adventure Club (Ad-Club) and the Indian Cultural Association.
+
+Professional bodies with student chapters include NIT Calicut ACM Student Chapter,[24] Computer Society of India, the Indian Society for Technical Education, Institute of Electrical and Electronics Engineers (IEEE) and The Institution of Engineers (India).
+
+Admissions[edit]
+Students are taken in for the undergraduate courses through the Joint Entrance Examination Main (JEE Main) conducted by CBSE, New Delhi. Around 16 lakh students wrote this test in 2012 to gain admission to one of 20 NITs. This makes it one of the largest such examinations in the world.[25] Admission to some other autonomous national level technical institutes (called Deemed University) is also through AIEEE. Students who have studied outside India for a minimum period of 2(two) years may seek admission through DASA (Direct Admission for Students Abroad) which was managed by EdCil (Educational Consultants India Limited) and is currently being managed by National Institute of Technology Karnataka, Suratkal (NIT-K) based on 12th Standard Board Examination marks or equivalent higher secondary examination marks/grade and SAT-II (Scholastic Aptitude Test -II) scores in Physics, Chemistry and Mathematics conducted by College Board. Similar admission provision is provided for foreign nationals.
+
+Admission to the graduate M.Tech and PhD courses are primarily based on scores in the GATE exam, conducted by the IITs. Admission to the MCA programme is done through the NIMCET conducted by the NITs. The first NIMCET in 2006 was conducted by NIT Calicut. Faculty from other institutes work as research scholars in NITC under the Quality Improvement Programme (QIP). It is the national coordination centre for the QIP of polytechnic institutes.
+
+Admission to MBA course is based on the Common Admission Test[CAT] score. Admission details will be published in the institute website and major dailies in India. The applicants will be shortlisted based on the CAT score, performance in qualifying degree (BTech/BE), work experience etc. The final selection is based on the performance of shortlisted candidates in group discussion (GD) and personal interview (PI). The GD and PI are normally conducted at major cities across India.
+
+Administration[edit]
+Under the constitution of the National Institutes of Technology Act 2007, the President of India is the Visitor to the institute. The authorities of the institute are Board of Governors and the Senate. The Board is headed by the chairman, who is appointed by the Visitor. The Director, who is the secretary of the Board, looks after the day-to-day running of the institute. The Board of Governors has nominees of the Central Government, the State Government, the NIT Council and the Institute Senate.
+
+NITC people[edit]
+Chairpersons[edit]
+
+Dr C. G. Krishnadas Nair (2011–present)
+Principals/directors[edit]
+M. N. Bandyopadhyay (2011–)
+
+Notable alumni[edit]
+Devadas Pillai, Intel Fellow, Director, Operational Decision Support Technology, Intel Corporation, Chandler, Arizona.
+Prabhakaran Paleri, scholar in national security studies, former Head, School of Management Studies, NIT Calicut and Former Director General, Indian Coast Guard.[26]
+Jishnu, Malayalam film actor[27]
+Manoj Varghese, Present Director, Facebook India[28]
+Vishwadeep Khatri - Founder and Lead Facilitator of Benchmark Six Sigma, the leading Six Sigma training and consulting company in India.
+Manoj Agarwala - Vice President, Services, GlobalLogic (formerly Induslogic).
+Tarun Amla - Vice President and Chief Technology Officer, Isola Global.
+Prasanth Gopalakrishnan - Founder and CEO of KalkiTech.
+Mathew George - Vice President, TelusVentures.
+Rakesh Rao - Founder and CEO of Four Dimension Technologies.
+Tomy Sebastian - Chief Scientist, Delphi Automotive Corp.
+Mahendra Lawoti - Writer ,Asst. Professor, Dept. of Political Science, Western Michigan University & Author of 'Towards A Democratic Nepal'.
+Suraj Pai - Senior Director, Service Industries, Oracle Corporation India.
+P.S. Nair - Director(Satellites), Indian Space Research Organisation.
+SS Raman -President,TVS Electronics & VP ( MAIT) 74 Batch (Mech Deptt).
+Labeeb Ismail - Co-inventor of MbTV & VP (Technology), TVWorks.
+Santhosh George - Senior Director, Oracle Corporation India.
+Anand Ranganathan- Founder and CEO, Efficient Frontier.
+Saurabh Sinha - Founder and President, Emids Technologies Inc.
+Shanthi Padmanabhan - Director, Philips Consumer Lifestyle & VP (Innovation and Technology), NXP Semiconductors.
+Dr. Vinodchandran N. Variyam - Associate Professor, University of Nebraska-Lincoln, USA.
+Dr. Sajith G. - Associate Professor, IIT Guwahati.
+Dr. K. Subramani - Assistant Professor, University of West Virginia, USA.
+Dr. L. Sunil Chandran - Assistant Professor, IISc Bangalore.
+Dr. Naveen Sivadasan - Completed his PhD from Max Planck Institute for Physics, Munich, Germany and is associated with Strand Genomics, Bangalore.
+Dr. Piyush P Kurur - Assistant Professor, IIT Kanpur.
+Dr. Prahlad Vadakkepat - Assistant Professor, ECE Dept., National University of Singapore.
+Dr. Ganesh Gopalakrishnan - Professor, University of Utah.
+Dr. Sadasivan Puthusserypady - Assistant Professor, ECE Dept., National University of Singapore.
+Dr. C. B. Shoban - Faculty, Rensselaer Polytechnic Institute.
+Dr. Mathews Jacob - Assistant Professor, Rochester Institute of Technology, New York.
+John Mathai.I.A.S. Ex Chief secretary of Kerala.
+Babu Peter - Ex director of Air India and E V P Engineering at GoAir ( India ) Pvt Ltd.
