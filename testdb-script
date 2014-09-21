@@ -1,0 +1,221 @@
+-- MySQL dump 10.13  Distrib 5.6.17, for Win64 (x86_64)
+--
+-- Host: localhost    Database: test
+-- ------------------------------------------------------
+-- Server version	5.6.17
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Current Database: `test`
+--
+
+CREATE DATABASE /*!32312 IF NOT EXISTS*/ `test` /*!40100 DEFAULT CHARACTER SET latin1 */;
+
+USE `test`;
+
+--
+-- Table structure for table `all_details`
+--
+
+DROP TABLE IF EXISTS `all_details`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `all_details` (
+  `CollegeId` int(11) NOT NULL AUTO_INCREMENT,
+  `Established` int(11) DEFAULT NULL,
+  `Location` text,
+  `Chairman` text,
+  `Director` text, 
+  `College_Univ_Type` varchar(255) DEFAULT NULL,
+  `AICTE_UGC_Approval` varchar(255) DEFAULT NULL,
+  `Affiliation` varchar(255) DEFAULT NULL,
+  `AIR` int(11) DEFAULT NULL,
+  PRIMARY KEY (`CollegeId`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `all_details`
+--
+
+LOCK TABLES `all_details` WRITE;
+/*!40000 ALTER TABLE `all_details` DISABLE KEYS */;
+INSERT INTO `all_details` VALUES (1,'1961','Hauz Khas, South Delhi','Dr. Vijay Bhatkar','Prof. R.K. Shivgaonkar','Public', 'n/a', 'n/a','Outlook India-1, India Today-1'),(2,'1958','Powai, a suburb in north eastern Mumbai, between the Vihar and Powai lakes','n/a','Prof. Devang V. Khakhar','Public','n/a','n/a','Outlook India-3,Dataquest-1');
+/*!40000 ALTER TABLE `all_details` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `alumni`
+--
+
+DROP TABLE IF EXISTS `alumni`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `alumni` (
+  `CollegeId` int(11) DEFAULT NULL,
+  `Name` varchar(255) DEFAULT NULL,
+  `Batch` int(11) DEFAULT NULL,
+  `Details` varchar(255) DEFAULT NULL,
+  KEY `CollegeId` (`CollegeId`),
+  CONSTRAINT `alumni_ibfk_1` FOREIGN KEY (`CollegeId`) REFERENCES `all_details` (`CollegeId`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `alumni`
+--
+
+LOCK TABLES `alumni` WRITE;
+/*!40000 ALTER TABLE `alumni` DISABLE KEYS */;
+INSERT INTO `alumni` VALUES (1,'Rajat Gupta','first Indian-born CEO of a global corporation served as Managing Director of McKinsey & Company','lol');
+/*!40000 ALTER TABLE `alumni` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `faculties`
+--
+
+DROP TABLE IF EXISTS `faculties`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `faculties` (
+  `CollegeId` int(11) DEFAULT NULL,
+  `facultyName` varchar(255) DEFAULT NULL,
+  `facultyDetails` text,
+  KEY `CollegeId` (`CollegeId`),
+  CONSTRAINT `faculties_ibfk_1` FOREIGN KEY (`CollegeId`) REFERENCES `all_details` (`CollegeId`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `faculties`
+--
+
+LOCK TABLES `faculties` WRITE;
+/*!40000 ALTER TABLE `faculties` DISABLE KEYS */;
+INSERT INTO `faculties` VALUES (1,'btech','ajfsdkjf'),(1,'mtech','jksdfkds'),(2,'btech','farzi faculty');
+/*!40000 ALTER TABLE `faculties` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `fees`
+--
+
+DROP TABLE IF EXISTS `fees`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `fees` (
+  `CollegeId` int(11) DEFAULT NULL,
+  `Course` varchar(255) DEFAULT NULL,
+  `Fee` mediumtext,
+  KEY `CollegeId` (`CollegeId`),
+  CONSTRAINT `fees_ibfk_1` FOREIGN KEY (`CollegeId`) REFERENCES `all_details` (`CollegeId`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `fees`
+--
+
+LOCK TABLES `fees` WRITE;
+/*!40000 ALTER TABLE `fees` DISABLE KEYS */;
+/*!40000 ALTER TABLE `fees` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `placement`
+--
+
+DROP TABLE IF EXISTS `placement`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `placement` (
+  `CollegeId` int(11) DEFAULT NULL,
+  `year` int(11) DEFAULT NULL,
+  `number_of_placement` int(11) DEFAULT NULL,
+  `high_package` mediumtext,
+  `avg_package` mediumtext,
+  KEY `CollegeId` (`CollegeId`),
+  CONSTRAINT `placement_ibfk_1` FOREIGN KEY (`CollegeId`) REFERENCES `all_details` (`CollegeId`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `placement`
+--
+
+LOCK TABLES `placement` WRITE;
+/*!40000 ALTER TABLE `placement` DISABLE KEYS */;
+/*!40000 ALTER TABLE `placement` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `scholarship`
+--
+
+DROP TABLE IF EXISTS `scholarship`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `scholarship` (
+  `CollegeId` int(11) DEFAULT NULL,
+  `Course` varchar(255) DEFAULT NULL,
+  `Scholarship` mediumtext,
+  KEY `CollegeId` (`CollegeId`),
+  CONSTRAINT `scholarship_ibfk_1` FOREIGN KEY (`CollegeId`) REFERENCES `all_details` (`CollegeId`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `scholarship`
+--
+
+LOCK TABLES `scholarship` WRITE;
+/*!40000 ALTER TABLE `scholarship` DISABLE KEYS */;
+/*!40000 ALTER TABLE `scholarship` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `studentstrength`
+--
+
+DROP TABLE IF EXISTS `studentstrength`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `studentstrength` (
+  `CollegeId` int(11) DEFAULT NULL,
+  `Course` varchar(255) DEFAULT NULL,
+  `Strength` int(11) DEFAULT NULL,
+  KEY `CollegeId` (`CollegeId`),
+  CONSTRAINT `studentstrength_ibfk_1` FOREIGN KEY (`CollegeId`) REFERENCES `all_details` (`CollegeId`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `studentstrength`
+--
+
+LOCK TABLES `studentstrength` WRITE;
+/*!40000 ALTER TABLE `studentstrength` DISABLE KEYS */;
+/*!40000 ALTER TABLE `studentstrength` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2014-07-19 14:07:33
