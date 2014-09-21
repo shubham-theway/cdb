@@ -50,7 +50,26 @@ CREATE TABLE `all_details` (
 
 LOCK TABLES `all_details` WRITE;
 /*!40000 ALTER TABLE `all_details` DISABLE KEYS */;
-INSERT INTO `all_details` VALUES (1,'1961','Hauz Khas, South Delhi','Dr. Vijay Bhatkar','Prof. R.K. Shivgaonkar','Public', 'n/a', 'n/a','Outlook India-1, India Today-1'),(2,'1958','Powai, a suburb in north eastern Mumbai, between the Vihar and Powai lakes','n/a','Prof. Devang V. Khakhar','Public','n/a','n/a','Outlook India-3,Dataquest-1');
+INSERT INTO `all_details` VALUES 
+(1,
+'1961',
+'Hauz Khas, South Delhi',
+'Dr. Vijay Bhatkar',
+'Prof. R.K. Shivgaonkar',
+'Public',
+ 'n/a', 
+ 'n/a',
+ 'Outlook India-1, India Today-1'
+ ),(2,
+ '1958',
+ 'Powai, a suburb in north eastern Mumbai, between the Vihar and Powai lakes',
+ 'n/a',
+ 'Prof. Devang V. Khakhar',
+ 'Public',
+ 'n/a',
+ 'n/a',
+ 'Outlook India-3,Dataquest-1'
+ );
 /*!40000 ALTER TABLE `all_details` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -64,7 +83,6 @@ DROP TABLE IF EXISTS `alumni`;
 CREATE TABLE `alumni` (
   `CollegeId` int(11) DEFAULT NULL,
   `Name` varchar(255) DEFAULT NULL,
-  `Batch` int(11) DEFAULT NULL,
   `Details` varchar(255) DEFAULT NULL,
   KEY `CollegeId` (`CollegeId`),
   CONSTRAINT `alumni_ibfk_1` FOREIGN KEY (`CollegeId`) REFERENCES `all_details` (`CollegeId`)
@@ -77,7 +95,48 @@ CREATE TABLE `alumni` (
 
 LOCK TABLES `alumni` WRITE;
 /*!40000 ALTER TABLE `alumni` DISABLE KEYS */;
-INSERT INTO `alumni` VALUES (1,'Rajat Gupta','first Indian-born CEO of a global corporation served as Managing Director of McKinsey & Company','lol');
+INSERT INTO `alumni` VALUES 
+(1,
+'Rajat Gupta','first Indian-born CEO of a global corporation served as Managing Director of McKinsey & Company',
+'Vinod Khosla','one of the co-founders of Sun Microsystems, where he served as its first CEO & Chairman in the early 1980s',
+'Padmasree Warrior','Chief Technology & Strategy Officer Cisco Systems and Former Chief Technology Officer of Motorola Inc.', 
+'Raghuram Rajan', 'Chief Economic Adviser to the Prime Minister of India and Eric Glecher at ChicagoBooth; 23rd governor of the Reserve Bank of India joined on 05 Sep 2013',
+'Jayant Sinha', 'former Managing Director at Omidyar Network, Member of Parliament in the Indian Lok Sabha',
+'Manvinder Singh Banga', 'Former Chairman of Unilever',
+'Sachin Bansal', 'Founder of Flipkart',
+'Binny Bansal', 'Co-founder of Flipkart',
+'Chetan Bhagat', 'Indian novelist',
+'Anurag Dikshit', 'co-founder, Partygaming',
+'Vikrant Bhargava', 'co-founder, Partygaming',
+'Rajendra Pawar', 'co-founder, NIIT',
+'Vijay Thadani', 'co-founder, NIIT',
+'Ashish Nanda', 'Director at Indian Institute of Management Ahmedabad & Robert Braucher Professor of Practice at Harvard Law School',
+'Tushar Raheja', 'Indian novelist',
+'Yogesh Chander Deveshwar', 'Chairman at ITC',
+'Sameer Gehlaut', 'Co-founder of Indiabulls',
+'Shrinivas Kulkarni', 'McArthur Professor of Astronomy and Planetary Science, Caltech',
+'Subir Sachdev', 'Professor of Physics at Harvard University, USA',
+'Krishnamurthi Venkataramanan', 'Chief Executive Officer & Managing Director Larsen & Toubro Limited',
+'Kiran Bedi', 'first female IPS officer of India',
+'Arogyaswami Paulraj', 'pioneer in MIMO, Professor Emeritus in the Dept. of Elect. Engineering at Stanford University',
+),
+(2,
+'Bharat Desai','Founder of Syntel',
+'Ravindran Kannan','Principal researcher at Microsoft. Winner of Fulkerson Prize and Knuth prize for outstanding contribution in computer science'
+'Narendra Karmarkar','Mathematician'
+'Sudheendra Kulkarni','Indian politician and columnist'
+'Udaya Kumar','Designer of the Indian rupee sign'
+'Victor Menezes','Senior Vice Chairman of Citigroup'
+'Pranav Mistry','Computer scientist at MIT'
+'Arun Netravali','Former President of Bell Laboratories'
+'Nandan Nilekani','Chairman of the Unique Identification Authority of India'
+'Nitin Nohria','Dean of Harvard Business School'
+'Satyendra Pakhale','Industrial Designer and Architect'
+'Suhas Patankar','Pioneer in CFD, Distinguished Professor'
+'Manohar Parrikar','Chief Minister of Goa'
+'Romesh Wadhwani','Engineer/entrepreneur. Founder of Symphony Technology group. Member of board of trustees of the John F Kennedy Centre for the Performing Arts'
+'Jairam Ramesh','Minister of Rural Development'
+);
 /*!40000 ALTER TABLE `alumni` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -106,6 +165,35 @@ LOCK TABLES `faculties` WRITE;
 INSERT INTO `faculties` VALUES (1,'btech','ajfsdkjf'),(1,'mtech','jksdfkds'),(2,'btech','farzi faculty');
 /*!40000 ALTER TABLE `faculties` ENABLE KEYS */;
 UNLOCK TABLES;
+
+
+
+--
+-- Table structure for table `links`
+--
+
+DROP TABLE IF EXISTS `links`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `links` (
+  `CollegeId` int(11) DEFAULT NULL,
+  `website` varchar(255) DEFAULT NULL,
+  `other links` varchar(255) DEFAULT NULL,
+  KEY `CollegeId` (`CollegeId`),
+  CONSTRAINT `faculties_ibfk_1` FOREIGN KEY (`CollegeId`) REFERENCES `all_details` (`CollegeId`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `links`
+--
+
+LOCK TABLES `faculties` WRITE;
+/*!40000 ALTER TABLE `faculties` DISABLE KEYS */;
+INSERT INTO `faculties` VALUES (1,'www.iitd.ac.in','http://www.iitd.ac.in/content/map-and-location , https://tnp.iitd.ac.in/download/brochureiitd.pdf'),(2,'www.iitb.ac.in','http://www.iitb.ac.in/campus/campus.html , http://www.iitb.ac.in/about/InstituteBrochure.pdf');
+/*!40000 ALTER TABLE `faculties` ENABLE KEYS */;
+UNLOCK TABLES;
+
 
 --
 -- Table structure for table `fees`
