@@ -152,17 +152,17 @@ CREATE TABLE `degrees and departments` (
   `degree` varchar(255) DEFAULT NULL,
   `departments` text,
   KEY `CollegeId` (`CollegeId`),
-  CONSTRAINT `faculties_ibfk_1` FOREIGN KEY (`CollegeId`) REFERENCES `all_details` (`CollegeId`)
+  CONSTRAINT `degrees and departments_ibfk_1` FOREIGN KEY (`CollegeId`) REFERENCES `all_details` (`CollegeId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `faculties`
+-- Dumping data for table `degrees and departments`
 --
 
-LOCK TABLES `faculties` WRITE;
-/*!40000 ALTER TABLE `faculties` DISABLE KEYS */;
-INSERT INTO `faculties` VALUES 
+LOCK TABLES `degrees and departments` WRITE;
+/*!40000 ALTER TABLE `degrees and departments` DISABLE KEYS */;
+INSERT INTO `degrees and departments` VALUES 
 (1,
 'Bachelor of Technology (BTech)','Chemical Engineering',
 'Bachelor of Technology (BTech)','Civil Engineering',
@@ -231,7 +231,7 @@ INSERT INTO `faculties` VALUES
 'PhD','All engineering disciplines, interdisciplinary areas, science disciplines and the humanities and social sciences'
 );
 
-/*!40000 ALTER TABLE `faculties` ENABLE KEYS */;
+/*!40000 ALTER TABLE `degrees and departments` ENABLE KEYS */;
 UNLOCK TABLES;
 
 
@@ -256,12 +256,12 @@ CREATE TABLE `links` (
 -- Dumping data for table `links`
 --
 
-LOCK TABLES `faculties` WRITE;
-/*!40000 ALTER TABLE `faculties` DISABLE KEYS */;
-INSERT INTO `faculties` VALUES 
+LOCK TABLES `links` WRITE;
+/*!40000 ALTER TABLE `links` DISABLE KEYS */;
+INSERT INTO `links` VALUES 
 (1,'www.iitd.ac.in','http://www.iitd.ac.in/content/map-and-location , https://tnp.iitd.ac.in/download/brochureiitd.pdf'),
 (2,'www.iitb.ac.in','http://www.iitb.ac.in/campus/campus.html , http://www.iitb.ac.in/about/InstituteBrochure.pdf');
-/*!40000 ALTER TABLE `faculties` ENABLE KEYS */;
+/*!40000 ALTER TABLE `links` ENABLE KEYS */;
 UNLOCK TABLES;
 
 
@@ -364,6 +364,14 @@ CREATE TABLE `studentstrength` (
 
 LOCK TABLES `studentstrength` WRITE;
 /*!40000 ALTER TABLE `studentstrength` DISABLE KEYS */;
+(1,
+'Undergraduates','2900',
+'Postgraduates','2700'
+),
+(2,
+'Undergraduates','3400',
+'Postgraduates','4600'
+);
 /*!40000 ALTER TABLE `studentstrength` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
