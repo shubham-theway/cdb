@@ -118,7 +118,7 @@ INSERT INTO `alumni` VALUES
 'Subir Sachdev', 'Professor of Physics at Harvard University, USA',
 'Krishnamurthi Venkataramanan', 'Chief Executive Officer & Managing Director Larsen & Toubro Limited',
 'Kiran Bedi', 'first female IPS officer of India',
-'Arogyaswami Paulraj', 'pioneer in MIMO, Professor Emeritus in the Dept. of Elect. Engineering at Stanford University',
+'Arogyaswami Paulraj', 'pioneer in MIMO, Professor Emeritus in the Dept. of Elect. Engineering at Stanford University'
 ),
 (2,
 'Bharat Desai','Founder of Syntel',
@@ -141,16 +141,16 @@ INSERT INTO `alumni` VALUES
 UNLOCK TABLES;
 
 --
--- Table structure for table `faculties`
+-- Table structure for table `degrees and departments`
 --
 
-DROP TABLE IF EXISTS `faculties`;
+DROP TABLE IF EXISTS `degrees and departments`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `faculties` (
+CREATE TABLE `degrees and departments` (
   `CollegeId` int(11) DEFAULT NULL,
-  `facultyName` varchar(255) DEFAULT NULL,
-  `facultyDetails` text,
+  `degree` varchar(255) DEFAULT NULL,
+  `departments` text,
   KEY `CollegeId` (`CollegeId`),
   CONSTRAINT `faculties_ibfk_1` FOREIGN KEY (`CollegeId`) REFERENCES `all_details` (`CollegeId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -162,7 +162,75 @@ CREATE TABLE `faculties` (
 
 LOCK TABLES `faculties` WRITE;
 /*!40000 ALTER TABLE `faculties` DISABLE KEYS */;
-INSERT INTO `faculties` VALUES (1,'btech','ajfsdkjf'),(1,'mtech','jksdfkds'),(2,'btech','farzi faculty');
+INSERT INTO `faculties` VALUES 
+(1,
+'Bachelor of Technology (BTech)','Chemical Engineering',
+'Bachelor of Technology (BTech)','Civil Engineering',
+'Bachelor of Technology (BTech)','Computer Science and Engineering',
+'Bachelor of Technology (BTech)','Electrical Engineering',
+'Bachelor of Technology (BTech)','Electrical Engineering (Power)',
+'Bachelor of Technology (BTech)','Engineering Physics',
+'Bachelor of Technology (BTech)','Mechanical Engineering',
+'Bachelor of Technology (BTech)','Production and Industrial Engineering',
+'Bachelor of Technology (BTech)','Textile Technology',
+'Dual Degree (BTech, MTech)','Biochemical Engineering and Biotechnology',
+'Dual Degree (BTech, MTech)','Chemical Engineering',
+'Dual Degree (BTech, MTech)','Computer Science and Engineering',
+'Dual Degree (BTech, MTech)','Electrical Engineering(Discontinued from 2013)',
+'Dual Degree (BTech, MTech)','Mathematics and Computing (Integrated M.Tech.)'
+),
+(2,
+'Bachelor of Technology (BTech)','Aerospace Engineering', 
+'Bachelor of Technology (BTech)','Chemical Engineering', 
+'Bachelor of Technology (BTech)','Civil Engineering', 
+'Bachelor of Technology (BTech)','Computer Science and Engineering', 
+'Bachelor of Technology (BTech)','Electrical Engineering', 
+'Bachelor of Technology (BTech)','Engineering Physics', 
+'Bachelor of Technology (BTech)','Mechanical Engineering', 
+'Bachelor of Technology (BTech)','Metallurgical Engineering', 
+'Bachelor of Technology (BTech)','Materials Science',
+'Dual Degree (BTech, MTech)','Aerospace Engineering', 
+'Dual Degree (BTech, MTech)','Chemical Engineering', 
+'Dual Degree (BTech, MTech)','Civil Engineering', 
+'Dual Degree (BTech, MTech)','Electrical Engineering',
+'Dual Degree (BTech, MTech)','Energy Engineering', 
+'Dual Degree (BTech, MTech)','Engineering Physics', 
+'Dual Degree (BTech, MTech)','Mechanical Engineering', 
+'Dual Degree (BTech, MTech)','Metallurgical Engineering and Materials Science',
+'Master of Technology (MTech)','Aerospace Engineering', 
+'Master of Technology (MTech)','Chemical Engineering', 
+'Master of Technology (MTech)','Civil Engineering', 
+'Master of Technology (MTech)','Computer Science and Engineering', 
+'Master of Technology (MTech)','Electrical Engineering', 
+'Master of Technology (MTech)','Geo-Exploration', 
+'Master of Technology (MTech)','Petroleum Geoscience', 
+'Master of Technology (MTech)','Information Technology', 
+'Master of Technology (MTech)','Mechanical Engineering', 
+'Master of Technology (MTech)','Metallurgical Engineering and Materials Science', 
+'Master of Technology (MTech)','Biomedical Engineering', 
+'Master of Technology (MTech)','Corrosion Science and Engineering', 
+'Master of Technology (MTech)','Energy Systems Engineering', 
+'Master of Technology (MTech)','Environmental Science and Engineering', 
+'Master of Technology (MTech)','Industrial Engineering and Operations Research (IEOR)', 
+'Master of Technology (MTech)','Reliability Engineering', 
+'Master of Technology (MTech)','Systems and Control Engineering', 
+'Master of Technology (MTech)','Nanoscience',
+'Master of Science (MSc)','Applied Geology', 
+'Master of Science (MSc)','Applied Geophysics', 
+'Master of Science (MSc)','Applied Statistics and Informatics (ASI)', 
+'Master of Science (MSc)','Biotechnology', 
+'Master of Science (MSc)','Chemistry', 
+'Master of Science (MSc)','Physics', 
+'Master of Science (MSc)','Mathematics',
+'Master of Design (M Des)','Industrial Design', 
+'Master of Design (M Des)','Visual Communication', 
+'Master of Design (M Des)','Interaction Design', 
+'Master of Design (M Des)','Animation',
+'Master of Philosophy (MPhil)','Planning and Development',
+'Master of Management (M Mgmt.)','General Management',
+'PhD','All engineering disciplines, interdisciplinary areas, science disciplines and the humanities and social sciences'
+);
+
 /*!40000 ALTER TABLE `faculties` ENABLE KEYS */;
 UNLOCK TABLES;
 
