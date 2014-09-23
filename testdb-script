@@ -258,7 +258,9 @@ CREATE TABLE `links` (
 
 LOCK TABLES `faculties` WRITE;
 /*!40000 ALTER TABLE `faculties` DISABLE KEYS */;
-INSERT INTO `faculties` VALUES (1,'www.iitd.ac.in','http://www.iitd.ac.in/content/map-and-location , https://tnp.iitd.ac.in/download/brochureiitd.pdf'),(2,'www.iitb.ac.in','http://www.iitb.ac.in/campus/campus.html , http://www.iitb.ac.in/about/InstituteBrochure.pdf');
+INSERT INTO `faculties` VALUES 
+(1,'www.iitd.ac.in','http://www.iitd.ac.in/content/map-and-location , https://tnp.iitd.ac.in/download/brochureiitd.pdf'),
+(2,'www.iitb.ac.in','http://www.iitb.ac.in/campus/campus.html , http://www.iitb.ac.in/about/InstituteBrochure.pdf');
 /*!40000 ALTER TABLE `faculties` ENABLE KEYS */;
 UNLOCK TABLES;
 
