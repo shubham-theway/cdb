@@ -73,6 +73,35 @@ INSERT INTO `all_details` VALUES
 /*!40000 ALTER TABLE `all_details` ENABLE KEYS */;
 UNLOCK TABLES;
 
+
+
+--
+-- Table structure for table `notable faculty`
+--
+
+DROP TABLE IF EXISTS `notable faculty`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `notable faculty` (
+  `CollegeId` int(11) DEFAULT NULL,
+  `name` varchar(255) DEFAULT NULL,
+  `details` varchar(255) DEFAULT NULL,
+  KEY `CollegeId` (`CollegeId`),
+  CONSTRAINT `notable_faculty_ibfk_1` FOREIGN KEY (`CollegeId`) REFERENCES `all_details` (`CollegeId`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `notable faculty`
+--
+
+LOCK TABLES `notable faculty` WRITE;
+/*!40000 ALTER TABLE `notable faculty` DISABLE KEYS */;
+/*!40000 ALTER TABLE `notable faculty` ENABLE KEYS */;
+UNLOCK TABLES;
+
+
+
 --
 -- Table structure for table `alumni`
 --
@@ -152,7 +181,7 @@ CREATE TABLE `degrees and departments` (
   `degree` varchar(255) DEFAULT NULL,
   `departments` text,
   KEY `CollegeId` (`CollegeId`),
-  CONSTRAINT `degrees and departments_ibfk_1` FOREIGN KEY (`CollegeId`) REFERENCES `all_details` (`CollegeId`)
+  CONSTRAINT `degrees_and_departments_ibfk_1` FOREIGN KEY (`CollegeId`) REFERENCES `all_details` (`CollegeId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -248,7 +277,7 @@ CREATE TABLE `links` (
   `website` varchar(255) DEFAULT NULL,
   `other links` varchar(255) DEFAULT NULL,
   KEY `CollegeId` (`CollegeId`),
-  CONSTRAINT `faculties_ibfk_1` FOREIGN KEY (`CollegeId`) REFERENCES `all_details` (`CollegeId`)
+  CONSTRAINT `links_ibfk_1` FOREIGN KEY (`CollegeId`) REFERENCES `all_details` (`CollegeId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -316,6 +345,35 @@ LOCK TABLES `placement` WRITE;
 /*!40000 ALTER TABLE `placement` DISABLE KEYS */;
 /*!40000 ALTER TABLE `placement` ENABLE KEYS */;
 UNLOCK TABLES;
+
+
+
+--
+-- Table structure for table `facilities`
+--
+
+DROP TABLE IF EXISTS `facilities`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `facilities` (
+  `CollegeId` int(11) DEFAULT NULL,
+  `hostels` text,
+  `other facilities` text,
+  KEY `CollegeId` (`CollegeId`),
+  CONSTRAINT `facilities_ibfk_1` FOREIGN KEY (`CollegeId`) REFERENCES `all_details` (`CollegeId`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `facilities`
+--
+
+LOCK TABLES `facilities` WRITE;
+/*!40000 ALTER TABLE `facilities` DISABLE KEYS */;
+/*!40000 ALTER TABLE `facilities` ENABLE KEYS */;
+UNLOCK TABLES;
+
+
 
 --
 -- Table structure for table `scholarship`
