@@ -1,0 +1,271 @@
+#import urllib2
+import re
+from urllib.request import urlopen
+#from pylab import *
+from bs4 import BeautifulSoup
+
+def fileOpen(file_name, mode):
+    try:
+        fi = open(file_name, mode)
+    except(IOError):
+        print ("file nt found", file_name)
+        sys.exit()
+    else:
+        return fi
+
+def lineRead(name):
+    line = name.readline()
+    line = line.replace("\n", " ")
+    return line
+
+def getHtml(link):
+    #connect to a URL
+    website1 = urlopen(link)
+    #read html code
+    html1 = website1.read()
+    return html1;
+
+def establishedYear(link,out_file):
+  html1 = getHtml(link)
+  #soup = BeautifulSoup(html1)
+  #print(''.join(BeautifulSoup(html1).findAll(text = True)))
+  #print(soup.prettify())
+  established = re.findall(b'Established.*[\r\n].*[0-9]', html1)
+  #print templinks
+  print (established[0])
+  len=established[0].__len__();
+  #print len
+  year=established[0][len-4:len]
+  #print year
+  out_file.write(year.decode("utf-8"))
+  out_file.write('\n')
+  out_file.close()
+
+def mystringcompare(s, p):
+    sl = s.__len__();
+    pl = p.__len__();
+    if(sl != pl):
+        return False
+    for i in (0,sl-1):
+        if(s[i] != p[i]):
+            return False;
+    return True;
+
+def fetchName(link):
+    len = link.__len__()
+    i=0
+    index=0
+    while i<len:
+        if (link[i] == '_'):
+            index = i
+        i+=1
+    name = link[index+1:len]
+    return name
+
+def loadKeywords(fileName):
+    keyFile = fileOpen(fileName,"r")
+    keywords=[];
+    #key = fileName.readLine();
+    for line in keyFile:
+        if (("keyword") in line or ("columns") in line or line.__len__()<2):
+            continue;
+        #print (line);
+        keywords.append(line);
+    #for key in keywords:
+    #    print(key)
+    return keywords
+
+#def grabData(iitlink, key, file):
+
+def mayBeHeading(line):
+    #print ("maybeheading")
+    for key in keywords:
+        key=key[0:key.__len__()-2]
+        if(line.lower().startswith(key.lower())):
+            return 2;
+        if(key in line):
+            dict[key]=line
+            return 1
+    return 0
+
+def mayBeParagraph(line):
+    #print("maybeparagraph")
+    return 1
+
+def prepareMetadata(iitlink):
+    html = getHtml(iitlink)
+    soup = BeautifulSoup(html,"html.parser")
+    #print(''.join(BeautifulSoup(html1).findAll(text = True)))
+    cleandata = ''.join(BeautifulSoup(html).findAll(text = True))
+    cleandata = ''.join(BeautifulSoup(cleandata).findAll(text = True))
+    #print (cleandata)
+    #print (soup.get_text())
+    # kill all script and style elements
+    for script in soup(["script", "style"]):
+        script.extract()    # rip it out
+
+    # get text
+    text = soup.get_text()
+
+    # break into lines and remove leading and trailing space on each
+    lines = (line.strip() for line in text.splitlines())
+    # break multi-headlines into a line each
+    txt = (phrase.strip() for line in lines for phrase in line.split("  "))
+    # drop blank lines
+    text = '\n'.join(st for st in txt if st)
+
+    if (text !=0):
+        return text
+    #print('LOL')
+    #print(text)
+    text+=('xxx0xxx')
+    import io;
+
+    meta=[]
+
+    data = io.StringIO(text)
+    md = [[]]*keywords.__len__()
+    #print(md)
+    lne = data.readline()
+    line=""
+    line+=lne
+    isHeading=0
+    para=0
+    wrongHeading=1
+    while ('xxx0xxx' not in line):
+
+        #print(line)
+        if(line.__len__()<2):
+            #isHeading=0
+            continue
+        
+        if(line.startswith('^')):
+            continue
+
+        #remove everything below "references"
+        if('references'.tolower() == line.tolower()):
+            continue
+
+        if(isHeading>=2):
+            isPara=mayBeParagraph(line)
+            wasPara=1
+            isHeading=0
+            #meta.append('para')
+            meta.append(line)
+            #print(line)
+
+        if (line.__len__() < 250):
+            isHeading = mayBeHeading(line)
+
+            if (isHeading >= 2):
+                para=0
+                wrongHeading=0
+                meta.append('''\n**''')
+                meta.append(line)
+                lne = data.readline()
+                line=""
+                line+=lne
+                continue                
+            
+            #print(line)
+
+        lne = data.readline()
+        line=""     
+        line+=lne
+    #print (meta)
+    return (meta)
+
+
+def filtered(raw):
+    import re
+    #remove brackets
+    #if(raw.contains(re'\[[a-z,A-Z,0-9]*\]\s')):
+    #if('history' in raw):
+        #print(raw.encode('utf-8'))
+    r2 = re.sub('\[[a-z,A-Z,0-9]*\]\s*',' ',raw)
+    return r2
+
+def CheckFilter(raw):
+    raw=raw.lower()
+    f1='External links'.lower()
+    l=f1.__len__();
+    if(l > raw.__len__()):
+        return False;
+    i=0
+    while(i<l):
+        if(raw[i]!=f1[i]):
+            return False;
+        i+=1
+    return True;
+
+allinks = []
+prevcount=0
+match = 0
+a = 1
+links=[]
+
+wikihome = 'http://en.wikipedia.org/wiki/Indian_Institutes_of_Technology'
+
+
+website = 'http://en.wikipedia.org/wiki/Indian_Institutes_of_Technology'
+
+website = urlopen(website);
+
+html = website.read()
+
+#fetch all iits wikilinks
+iitswiki = re.findall(b'/wiki/Indian_Institute_of_Technology_.*\" t', html)
+alliits = []
+allNames = []
+
+keywords = loadKeywords("crawler-keywords.txt");
+print(keywords)
+
+for link in iitswiki:
+    currentiitlink = 'http://en.wikipedia.org'+link.decode("utf-8")
+    len1 = currentiitlink.__len__()
+    currentiitlink = currentiitlink[0:len1-3];
+    #print currentiitlink
+    match = 0;
+    for tmplink in alliits:
+        if (tmplink == currentiitlink):
+            match = 1
+    if match == 0:
+        alliits.append(currentiitlink)
+        #print 'added'
+
+#print alliits
+
+for eachiit in alliits:
+    name = fetchName(eachiit)
+    if name in allNames:
+        continue
+    #if name != "Mumbai":
+    #    continue
+    allNames.append(name);
+    name=name+".txt"
+    print (name);
+
+    file = fileOpen("crwl_"+name, "w")
+    #establishedYear(eachiit,file)
+    
+    dict = {}
+    i=0
+    metadata = prepareMetadata(eachiit)#"""http://www.3.141592653589793238462643383279502884197169399375105820974944592.com/""")
+    #metadata=str(metadata)
+    #metadata.encode('ascii', 'ignore')
+    mditer=iter(metadata.splitlines())
+    
+    #print(metadata);
+    with open("crwl_"+name, 'w', encoding='utf-8') as f:
+        for itr in mditer:
+            if(CheckFilter(itr) and itr.__len__()<25):
+                break
+            if(0==itr.startswith('^')):
+                f.write(filtered(itr))
+                f.write('\n')
+            
+    #for key in keywords:
+            #grabData(eachiit,key,file)
+
+
