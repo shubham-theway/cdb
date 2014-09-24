@@ -397,22 +397,22 @@ INSERT INTO `facilities` VALUES
                                                                                                a fine arts room
                                                                                                robotics room
                                                                                                a committee room used to organise quizzing and debating events
-																							   Open Air Theater' ),
+											       Open Air Theater' ),
 (2,'There are 15 hostels (13 for boys and 2 for girls). There are also apartments for married students', 'Athletics tracks
                                                                                                           Swimming Pool
                                                                                                           Badminton Courts
                                                                                                           Basketball Courts
                                                                                                           Billiards Table
-																										  Cricket Ground
-																										  Football Ground
-																										  Hockey Field
-																										  Tennis Courts
-																										  Squash Court
-																			   							  Table Tennis Room
-																										  Volleyball court
-																										  Weightlifting Room
-																										  Gymkhana Gymnasium
-																									      SAC Gymnasium');
+													  Cricket Ground
+													  Football Ground
+													  Hockey Field
+													  Tennis Courts
+													  Squash Court
+													  Table Tennis Room
+													  Volleyball court
+													  Weightlifting Room
+													  Gymkhana Gymnasium
+												          SAC Gymnasium');
 	
 /*!40000 ALTER TABLE `facilities` ENABLE KEYS */;
 UNLOCK TABLES;
