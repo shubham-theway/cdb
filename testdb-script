@@ -329,9 +329,10 @@ DROP TABLE IF EXISTS `placement`;
 CREATE TABLE `placement` (
   `CollegeId` int(11) DEFAULT NULL,
   `year` int(11) DEFAULT NULL,
-  `number_of_placement` int(11) DEFAULT NULL,
-  `high_package` mediumtext,
-  `avg_package` mediumtext,
+  `course` text,
+  `placement percent` int(11) DEFAULT NULL,
+  `highest_package` mediumtext,
+  `average_package` mediumtext,
   KEY `CollegeId` (`CollegeId`),
   CONSTRAINT `placement_ibfk_1` FOREIGN KEY (`CollegeId`) REFERENCES `all_details` (`CollegeId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -343,6 +344,22 @@ CREATE TABLE `placement` (
 
 LOCK TABLES `placement` WRITE;
 /*!40000 ALTER TABLE `placement` DISABLE KEYS */;
+INSERT INTO `links` VALUES 
+(1,
+'2012', 'btech', '74', '22 lakhs', '5.2 lakhs',
+'2012', 'mba', '120', '18 lakhs', '12.6 lakhs'),
+(2,
+'2012', 'btech', '84', 'n/a', 'n/a',
+'2012', 'dual', '92', 'n/a', 'n/a',
+'2012', 'mtech', '79', 'n/a', 'n/a',
+'2012', 'msc', '51', 'n/a', 'n/a',
+'2013', 'total', '76', '> 10 lakhs', '7 lakhs'
+'2013', 'btech', '72.56', 'n/a, n/a',
+'2013', 'dual','80', 'n/a', 'n/a',
+'2013', 'mtech', '70', 'n/a', 'n/a',
+'2013', 'msc', '50', 'n/a', 'n/a',
+'2013', 'total', '68', '> 11 lakhs', '8 lakhs'
+);
 /*!40000 ALTER TABLE `placement` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -370,6 +387,33 @@ CREATE TABLE `facilities` (
 
 LOCK TABLES `facilities` WRITE;
 /*!40000 ALTER TABLE `facilities` DISABLE KEYS */;
+INSERT INTO `facilities` VALUES 
+(1,'13 hostels (11 for boys and 2 for girls). There are also apartments for married students', 'The Student Activity Center or SAC  gymnasium
+                                                                                               swimming pool
+                                                                                               billiards rooms
+                                                                                               table tennis rooms
+                                                                                               badminton court
+                                                                                               music room
+                                                                                               a fine arts room
+                                                                                               robotics room
+                                                                                               a committee room used to organise quizzing and debating events
+																							   Open Air Theater' ),
+(2,'There are 15 hostels (13 for boys and 2 for girls). There are also apartments for married students', 'Athletics tracks
+                                                                                                          Swimming Pool
+                                                                                                          Badminton Courts
+                                                                                                          Basketball Courts
+                                                                                                          Billiards Table
+																										  Cricket Ground
+																										  Football Ground
+																										  Hockey Field
+																										  Tennis Courts
+																										  Squash Court
+																			   							  Table Tennis Room
+																										  Volleyball court
+																										  Weightlifting Room
+																										  Gymkhana Gymnasium
+																									      SAC Gymnasium');
+	
 /*!40000 ALTER TABLE `facilities` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -385,6 +429,7 @@ DROP TABLE IF EXISTS `scholarship`;
 CREATE TABLE `scholarship` (
   `CollegeId` int(11) DEFAULT NULL,
   `Course` varchar(255) DEFAULT NULL,
+  `scholarship_type` varchar(255) DEFAULT NULL,
   `Scholarship` mediumtext,
   KEY `CollegeId` (`CollegeId`),
   CONSTRAINT `scholarship_ibfk_1` FOREIGN KEY (`CollegeId`) REFERENCES `all_details` (`CollegeId`)
@@ -397,6 +442,23 @@ CREATE TABLE `scholarship` (
 
 LOCK TABLES `scholarship` WRITE;
 /*!40000 ALTER TABLE `scholarship` DISABLE KEYS */;
+INSERT INTO `scholarship` VALUES 
+(2, 'btech', 'IIT', 'Merit-cum-Means scholarship is awarded @ Rs.1000/-per month with benefit of free tuition fee(Rs.13,500/-per semester)',
+    'btech', 'IIT', 'All SC/ST students are exempted from the payment of tuition fees'
+	'btech', 'govt. of India','The National Scholarships are awarded to the students from the respective states. The applications are forwarded through IIT',
+	'btech', 'govt. of India','Those who are awarded the NTS scholarship during their 10 + 2 are continued during the undergraduate and postgraduate level',
+	'mtech', 'govt. of India', 'http://www.iitb.ac.in/academic/gmtec.jsp',
+	'mtech', 'private', 'http://www.iitb.ac.in/academic/mtectscholar.jsp',
+	'mtech', 'QIP Scholarship Teaching Assistantship', 'Rs. 2500/- p.m. for 24 months and Contingency Rs. 3000/- p.a.'
+	'msc', 'NBHM (National Board of Higher Mathematics)', 'Rs 4000/- p.m., Selection through NBHM directly',
+	'msc', 'DBT Scholarship', 'Rs 800/- p.m. , Selection through Department of Biotechnology',
+	'msc-phd', 'IIT', 'First 04 Semester Rs. 6,000/- p.m., First 5th to 8th Semester Rs. 16,000/- p.m., First 9th to 12th Semester Rs. 18,000/- p.m.',
+	'M.Tech/M.Phil/M.Des Teaching Assistantship', 'IIT', '8000 to 9000 p.m.',
+	'phd Teaching Assistantship', 'IIT','16000 to 22000 p.m. depending on qualification',
+	'phd','QIP Scholarship Teaching Assistantship','Rs. 6000/- for first 2 years and Rs. 6400/- for 3rd year and Contingency Rs. 10,000/- p.a',
+	'phd', 'private', 'http://www.iitb.ac.in/academic/phdscholar.jsp',
+	'phd', 'govt. of India', 'http://www.iitb.ac.in/academic/gphd.jsp',
+	);
 /*!40000 ALTER TABLE `scholarship` ENABLE KEYS */;
 UNLOCK TABLES;
 
