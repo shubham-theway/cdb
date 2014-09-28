@@ -125,47 +125,43 @@ CREATE TABLE `alumni` (
 LOCK TABLES `alumni` WRITE;
 /*!40000 ALTER TABLE `alumni` DISABLE KEYS */;
 INSERT INTO `alumni` VALUES 
-(1,
-'Rajat Gupta','first Indian-born CEO of a global corporation served as Managing Director of McKinsey & Company',
-'Vinod Khosla','one of the co-founders of Sun Microsystems, where he served as its first CEO & Chairman in the early 1980s',
-'Padmasree Warrior','Chief Technology & Strategy Officer Cisco Systems and Former Chief Technology Officer of Motorola Inc.', 
-'Raghuram Rajan', 'Chief Economic Adviser to the Prime Minister of India and Eric Glecher at ChicagoBooth; 23rd governor of the Reserve Bank of India joined on 05 Sep 2013',
-'Jayant Sinha', 'former Managing Director at Omidyar Network, Member of Parliament in the Indian Lok Sabha',
-'Manvinder Singh Banga', 'Former Chairman of Unilever',
-'Sachin Bansal', 'Founder of Flipkart',
-'Binny Bansal', 'Co-founder of Flipkart',
-'Chetan Bhagat', 'Indian novelist',
-'Anurag Dikshit', 'co-founder, Partygaming',
-'Vikrant Bhargava', 'co-founder, Partygaming',
-'Rajendra Pawar', 'co-founder, NIIT',
-'Vijay Thadani', 'co-founder, NIIT',
-'Ashish Nanda', 'Director at Indian Institute of Management Ahmedabad & Robert Braucher Professor of Practice at Harvard Law School',
-'Tushar Raheja', 'Indian novelist',
-'Yogesh Chander Deveshwar', 'Chairman at ITC',
-'Sameer Gehlaut', 'Co-founder of Indiabulls',
-'Shrinivas Kulkarni', 'McArthur Professor of Astronomy and Planetary Science, Caltech',
-'Subir Sachdev', 'Professor of Physics at Harvard University, USA',
-'Krishnamurthi Venkataramanan', 'Chief Executive Officer & Managing Director Larsen & Toubro Limited',
-'Kiran Bedi', 'first female IPS officer of India',
-'Arogyaswami Paulraj', 'pioneer in MIMO, Professor Emeritus in the Dept. of Elect. Engineering at Stanford University'
-),
-(2,
-'Bharat Desai','Founder of Syntel',
-'Ravindran Kannan','Principal researcher at Microsoft. Winner of Fulkerson Prize and Knuth prize for outstanding contribution in computer science'
-'Narendra Karmarkar','Mathematician'
-'Sudheendra Kulkarni','Indian politician and columnist'
-'Udaya Kumar','Designer of the Indian rupee sign'
-'Victor Menezes','Senior Vice Chairman of Citigroup'
-'Pranav Mistry','Computer scientist at MIT'
-'Arun Netravali','Former President of Bell Laboratories'
-'Nandan Nilekani','Chairman of the Unique Identification Authority of India'
-'Nitin Nohria','Dean of Harvard Business School'
-'Satyendra Pakhale','Industrial Designer and Architect'
-'Suhas Patankar','Pioneer in CFD, Distinguished Professor'
-'Manohar Parrikar','Chief Minister of Goa'
-'Romesh Wadhwani','Engineer/entrepreneur. Founder of Symphony Technology group. Member of board of trustees of the John F Kennedy Centre for the Performing Arts'
-'Jairam Ramesh','Minister of Rural Development'
-);
+(1,'Rajat Gupta','first Indian-born CEO of a global corporation served as Managing Director of McKinsey & Company'),
+(1,'Vinod Khosla','one of the co-founders of Sun Microsystems, where he served as its first CEO & Chairman in the early 1980s'),
+(1,'Padmasree Warrior','Chief Technology & Strategy Officer Cisco Systems and Former Chief Technology Officer of Motorola Inc.'), 
+(1,'Raghuram Rajan', 'Chief Economic Adviser to the Prime Minister of India and Eric Glecher at ChicagoBooth; 23rd governor of the Reserve Bank of India joined on 05 Sep 2013'),
+(1,'Jayant Sinha', 'former Managing Director at Omidyar Network, Member of Parliament in the Indian Lok Sabha'),
+(1,'Manvinder Singh Banga', 'Former Chairman of Unilever'),
+(1,'Sachin Bansal', 'Founder of Flipkart'),
+(1,'Binny Bansal', 'Co-founder of Flipkart'),
+(1,'Chetan Bhagat', 'Indian novelist'),
+(1,'Anurag Dikshit', 'co-founder, Partygaming'),
+(1,'Vikrant Bhargava', 'co-founder, Partygaming'),
+(1,'Rajendra Pawar', 'co-founder, NIIT'),
+(1,'Vijay Thadani', 'co-founder, NIIT'),
+(1,'Ashish Nanda', 'Director at Indian Institute of Management Ahmedabad & Robert Braucher Professor of Practice at Harvard Law School'),
+(1,'Tushar Raheja', 'Indian novelist'),
+(1,'Yogesh Chander Deveshwar', 'Chairman at ITC'),
+(1,'Sameer Gehlaut', 'Co-founder of Indiabulls'),
+(1,'Shrinivas Kulkarni', 'McArthur Professor of Astronomy and Planetary Science, Caltech'),
+(1,'Subir Sachdev', 'Professor of Physics at Harvard University, USA'),
+(1,'Krishnamurthi Venkataramanan', 'Chief Executive Officer & Managing Director Larsen & Toubro Limited'),
+(1,'Kiran Bedi', 'first female IPS officer of India'),
+(1,'Arogyaswami Paulraj', 'pioneer in MIMO, Professor Emeritus in the Dept. of Elect. Engineering at Stanford University'),
+(2,'Bharat Desai','Founder of Syntel'),
+(2,'Ravindran Kannan','Principal researcher at Microsoft. Winner of Fulkerson Prize and Knuth prize for outstanding contribution in computer science'),
+(2,'Narendra Karmarkar','Mathematician'),
+(2,'Sudheendra Kulkarni','Indian politician and columnist'),
+(2,'Udaya Kumar','Designer of the Indian rupee sign'),
+(2,'Victor Menezes','Senior Vice Chairman of Citigroup'),
+(2,'Pranav Mistry','Computer scientist at MIT'),
+(2,'Arun Netravali','Former President of Bell Laboratories'),
+(2,'Nandan Nilekani','Chairman of the Unique Identification Authority of India'),
+(2,'Nitin Nohria','Dean of Harvard Business School'),
+(2,'Satyendra Pakhale','Industrial Designer and Architect'),
+(2,'Suhas Patankar','Pioneer in CFD, Distinguished Professor'),
+(2,'Manohar Parrikar','Chief Minister of Goa'),
+(2,'Romesh Wadhwani','Engineer/entrepreneur. Founder of Symphony Technology group. Member of board of trustees of the John F Kennedy Centre for the Performing Arts'),
+(2,'Jairam Ramesh','Minister of Rural Development');
 /*!40000 ALTER TABLE `alumni` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -192,73 +188,69 @@ CREATE TABLE `degrees and departments` (
 LOCK TABLES `degrees and departments` WRITE;
 /*!40000 ALTER TABLE `degrees and departments` DISABLE KEYS */;
 INSERT INTO `degrees and departments` VALUES 
-(1,
-'Bachelor of Technology (BTech)','Chemical Engineering',
-'Bachelor of Technology (BTech)','Civil Engineering',
-'Bachelor of Technology (BTech)','Computer Science and Engineering',
-'Bachelor of Technology (BTech)','Electrical Engineering',
-'Bachelor of Technology (BTech)','Electrical Engineering (Power)',
-'Bachelor of Technology (BTech)','Engineering Physics',
-'Bachelor of Technology (BTech)','Mechanical Engineering',
-'Bachelor of Technology (BTech)','Production and Industrial Engineering',
-'Bachelor of Technology (BTech)','Textile Technology',
-'Dual Degree (BTech, MTech)','Biochemical Engineering and Biotechnology',
-'Dual Degree (BTech, MTech)','Chemical Engineering',
-'Dual Degree (BTech, MTech)','Computer Science and Engineering',
-'Dual Degree (BTech, MTech)','Electrical Engineering(Discontinued from 2013)',
-'Dual Degree (BTech, MTech)','Mathematics and Computing (Integrated M.Tech.)'
-),
-(2,
-'Bachelor of Technology (BTech)','Aerospace Engineering', 
-'Bachelor of Technology (BTech)','Chemical Engineering', 
-'Bachelor of Technology (BTech)','Civil Engineering', 
-'Bachelor of Technology (BTech)','Computer Science and Engineering', 
-'Bachelor of Technology (BTech)','Electrical Engineering', 
-'Bachelor of Technology (BTech)','Engineering Physics', 
-'Bachelor of Technology (BTech)','Mechanical Engineering', 
-'Bachelor of Technology (BTech)','Metallurgical Engineering', 
-'Bachelor of Technology (BTech)','Materials Science',
-'Dual Degree (BTech, MTech)','Aerospace Engineering', 
-'Dual Degree (BTech, MTech)','Chemical Engineering', 
-'Dual Degree (BTech, MTech)','Civil Engineering', 
-'Dual Degree (BTech, MTech)','Electrical Engineering',
-'Dual Degree (BTech, MTech)','Energy Engineering', 
-'Dual Degree (BTech, MTech)','Engineering Physics', 
-'Dual Degree (BTech, MTech)','Mechanical Engineering', 
-'Dual Degree (BTech, MTech)','Metallurgical Engineering and Materials Science',
-'Master of Technology (MTech)','Aerospace Engineering', 
-'Master of Technology (MTech)','Chemical Engineering', 
-'Master of Technology (MTech)','Civil Engineering', 
-'Master of Technology (MTech)','Computer Science and Engineering', 
-'Master of Technology (MTech)','Electrical Engineering', 
-'Master of Technology (MTech)','Geo-Exploration', 
-'Master of Technology (MTech)','Petroleum Geoscience', 
-'Master of Technology (MTech)','Information Technology', 
-'Master of Technology (MTech)','Mechanical Engineering', 
-'Master of Technology (MTech)','Metallurgical Engineering and Materials Science', 
-'Master of Technology (MTech)','Biomedical Engineering', 
-'Master of Technology (MTech)','Corrosion Science and Engineering', 
-'Master of Technology (MTech)','Energy Systems Engineering', 
-'Master of Technology (MTech)','Environmental Science and Engineering', 
-'Master of Technology (MTech)','Industrial Engineering and Operations Research (IEOR)', 
-'Master of Technology (MTech)','Reliability Engineering', 
-'Master of Technology (MTech)','Systems and Control Engineering', 
-'Master of Technology (MTech)','Nanoscience',
-'Master of Science (MSc)','Applied Geology', 
-'Master of Science (MSc)','Applied Geophysics', 
-'Master of Science (MSc)','Applied Statistics and Informatics (ASI)', 
-'Master of Science (MSc)','Biotechnology', 
-'Master of Science (MSc)','Chemistry', 
-'Master of Science (MSc)','Physics', 
-'Master of Science (MSc)','Mathematics',
-'Master of Design (M Des)','Industrial Design', 
-'Master of Design (M Des)','Visual Communication', 
-'Master of Design (M Des)','Interaction Design', 
-'Master of Design (M Des)','Animation',
-'Master of Philosophy (MPhil)','Planning and Development',
-'Master of Management (M Mgmt.)','General Management',
-'PhD','All engineering disciplines, interdisciplinary areas, science disciplines and the humanities and social sciences'
-);
+(1,'Bachelor of Technology (BTech)','Chemical Engineering'),
+(1,'Bachelor of Technology (BTech)','Civil Engineering'),
+(1,'Bachelor of Technology (BTech)','Computer Science and Engineering'),
+(1,'Bachelor of Technology (BTech)','Electrical Engineering'),
+(1,'Bachelor of Technology (BTech)','Electrical Engineering (Power)'),
+(1,'Bachelor of Technology (BTech)','Engineering Physics'),
+(1,'Bachelor of Technology (BTech)','Mechanical Engineering'),
+(1,'Bachelor of Technology (BTech)','Production and Industrial Engineering'),
+(1,'Bachelor of Technology (BTech)','Textile Technology'),
+(1,'Dual Degree (BTech, MTech)','Biochemical Engineering and Biotechnology'),
+(1,'Dual Degree (BTech, MTech)','Chemical Engineering'),
+(1,'Dual Degree (BTech, MTech)','Computer Science and Engineering'),
+(1,'Dual Degree (BTech, MTech)','Electrical Engineering(Discontinued from 2013)'),
+(1,'Dual Degree (BTech, MTech)','Mathematics and Computing (Integrated M.Tech.)'),
+(2,'Bachelor of Technology (BTech)','Aerospace Engineering'), 
+(2,'Bachelor of Technology (BTech)','Chemical Engineering'), 
+(2,'Bachelor of Technology (BTech)','Civil Engineering'), 
+(2,'Bachelor of Technology (BTech)','Computer Science and Engineering'), 
+(2,'Bachelor of Technology (BTech)','Electrical Engineering'), 
+(2,'Bachelor of Technology (BTech)','Engineering Physics'), 
+(2,'Bachelor of Technology (BTech)','Mechanical Engineering'), 
+(2,'Bachelor of Technology (BTech)','Metallurgical Engineering'), 
+(2,'Bachelor of Technology (BTech)','Materials Science'),
+(2,'Dual Degree (BTech, MTech)','Aerospace Engineering'), 
+(2,'Dual Degree (BTech, MTech)','Chemical Engineering'), 
+(2,'Dual Degree (BTech, MTech)','Civil Engineering'), 
+(2,'Dual Degree (BTech, MTech)','Electrical Engineering'),
+(2,'Dual Degree (BTech, MTech)','Energy Engineering'), 
+(2,'Dual Degree (BTech, MTech)','Engineering Physics'), 
+(2,'Dual Degree (BTech, MTech)','Mechanical Engineering'), 
+(2,'Dual Degree (BTech, MTech)','Metallurgical Engineering and Materials Science'),
+(2,'Master of Technology (MTech)','Aerospace Engineering'), 
+(2,'Master of Technology (MTech)','Chemical Engineering'), 
+(2,'Master of Technology (MTech)','Civil Engineering'), 
+(2,'Master of Technology (MTech)','Computer Science and Engineering'), 
+(2,'Master of Technology (MTech)','Electrical Engineering'), 
+(2,'Master of Technology (MTech)','Geo-Exploration'), 
+(2,'Master of Technology (MTech)','Petroleum Geoscience'), 
+(2,'Master of Technology (MTech)','Information Technology'), 
+(2,'Master of Technology (MTech)','Mechanical Engineering'), 
+(2,'Master of Technology (MTech)','Metallurgical Engineering and Materials Science'), 
+(2,'Master of Technology (MTech)','Biomedical Engineering'), 
+(2,'Master of Technology (MTech)','Corrosion Science and Engineering'), 
+(2,'Master of Technology (MTech)','Energy Systems Engineering'), 
+(2,'Master of Technology (MTech)','Environmental Science and Engineering'), 
+(2,'Master of Technology (MTech)','Industrial Engineering and Operations Research (IEOR)'), 
+(2,'Master of Technology (MTech)','Reliability Engineering'), 
+(2,'Master of Technology (MTech)','Systems and Control Engineering'), 
+(2,'Master of Technology (MTech)','Nanoscience'),
+(2,'Master of Science (MSc)','Applied Geology'), 
+(2,'Master of Science (MSc)','Applied Geophysics'), 
+(2,'Master of Science (MSc)','Applied Statistics and Informatics (ASI)'), 
+(2,'Master of Science (MSc)','Biotechnology'), 
+(2,'Master of Science (MSc)','Chemistry'), 
+(2,'Master of Science (MSc)','Physics'), 
+(2,'Master of Science (MSc)','Mathematics'),
+(2,'Master of Design (M Des)','Industrial Design'), 
+(2,'Master of Design (M Des)','Visual Communication'), 
+(2,'Master of Design (M Des)','Interaction Design'), 
+(2,'Master of Design (M Des)','Animation'),
+(2,'Master of Philosophy (MPhil)','Planning and Development'),
+(2,'Master of Management (M Mgmt.)','General Management'),
+(2,'PhD','All engineering disciplines, interdisciplinary areas, science disciplines and the humanities and social sciences');
 
 /*!40000 ALTER TABLE `degrees and departments` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -344,22 +336,19 @@ CREATE TABLE `placement` (
 
 LOCK TABLES `placement` WRITE;
 /*!40000 ALTER TABLE `placement` DISABLE KEYS */;
-INSERT INTO `links` VALUES 
-(1,
-'2012', 'btech', '74', '22 lakhs', '5.2 lakhs',
-'2012', 'mba', '120', '18 lakhs', '12.6 lakhs'),
-(2,
-'2012', 'btech', '84', 'n/a', 'n/a',
-'2012', 'dual', '92', 'n/a', 'n/a',
-'2012', 'mtech', '79', 'n/a', 'n/a',
-'2012', 'msc', '51', 'n/a', 'n/a',
-'2013', 'total', '76', '> 10 lakhs', '7 lakhs'
-'2013', 'btech', '72.56', 'n/a, n/a',
-'2013', 'dual','80', 'n/a', 'n/a',
-'2013', 'mtech', '70', 'n/a', 'n/a',
-'2013', 'msc', '50', 'n/a', 'n/a',
-'2013', 'total', '68', '> 11 lakhs', '8 lakhs'
-);
+INSERT INTO `placement` VALUES 
+(1,'2012', 'btech', '74',  '22 lakhs', '5.2 lakhs'),
+(1,'2012', 'mba'  , '120', '18 lakhs', '12.6 lakhs'),
+(2,'2012', 'btech', '84',  'n/a',        'n/a'),
+(2,'2012', 'dual' , '92',  'n/a',        'n/a'),
+(2,'2012', 'mtech', '79',  'n/a',        'n/a'),
+(2,'2012', 'msc'  , '51',  'n/a',        'n/a'),
+(2,'2013', 'total', '76',  '> 10 lakhs', '7 lakhs'),
+(2,'2013', 'btech', '73',  'n/a',        'n/a'),
+(2,'2013', 'dual' , '80',  'n/a',        'n/a'),
+(2,'2013', 'mtech', '70',  'n/a',        'n/a'),
+(2,'2013', 'msc'  , '50',  'n/a',        'n/a'),
+(2,'2013', 'total', '68',  '> 11 lakhs', '8 lakhs');
 /*!40000 ALTER TABLE `placement` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -443,22 +432,21 @@ CREATE TABLE `scholarship` (
 LOCK TABLES `scholarship` WRITE;
 /*!40000 ALTER TABLE `scholarship` DISABLE KEYS */;
 INSERT INTO `scholarship` VALUES 
-(2, 'btech', 'IIT', 'Merit-cum-Means scholarship is awarded @ Rs.1000/-per month with benefit of free tuition fee(Rs.13,500/-per semester)',
-    'btech', 'IIT', 'All SC/ST students are exempted from the payment of tuition fees'
-	'btech', 'govt. of India','The National Scholarships are awarded to the students from the respective states. The applications are forwarded through IIT',
-	'btech', 'govt. of India','Those who are awarded the NTS scholarship during their 10 + 2 are continued during the undergraduate and postgraduate level',
-	'mtech', 'govt. of India', 'http://www.iitb.ac.in/academic/gmtec.jsp',
-	'mtech', 'private', 'http://www.iitb.ac.in/academic/mtectscholar.jsp',
-	'mtech', 'QIP Scholarship Teaching Assistantship', 'Rs. 2500/- p.m. for 24 months and Contingency Rs. 3000/- p.a.'
-	'msc', 'NBHM (National Board of Higher Mathematics)', 'Rs 4000/- p.m., Selection through NBHM directly',
-	'msc', 'DBT Scholarship', 'Rs 800/- p.m. , Selection through Department of Biotechnology',
-	'msc-phd', 'IIT', 'First 04 Semester Rs. 6,000/- p.m., First 5th to 8th Semester Rs. 16,000/- p.m., First 9th to 12th Semester Rs. 18,000/- p.m.',
-	'M.Tech/M.Phil/M.Des Teaching Assistantship', 'IIT', '8000 to 9000 p.m.',
-	'phd Teaching Assistantship', 'IIT','16000 to 22000 p.m. depending on qualification',
-	'phd','QIP Scholarship Teaching Assistantship','Rs. 6000/- for first 2 years and Rs. 6400/- for 3rd year and Contingency Rs. 10,000/- p.a',
-	'phd', 'private', 'http://www.iitb.ac.in/academic/phdscholar.jsp',
-	'phd', 'govt. of India', 'http://www.iitb.ac.in/academic/gphd.jsp',
-	);
+(2, 'btech', 'IIT', 'Merit-cum-Means scholarship is awarded @ Rs.1000/-per month with benefit of free tuition fee(Rs.13,500/-per semester)'),
+(2, 'btech', 'IIT', 'All SC/ST students are exempted from the payment of tuition fees'),
+(2,	'btech', 'govt. of India','The National Scholarships are awarded to the students from the respective states. The applications are forwarded through IIT'),
+(2,	'btech', 'govt. of India','Those who are awarded the NTS scholarship during their 10 + 2 are continued during the undergraduate and postgraduate level'),
+(2,	'mtech', 'govt. of India', 'http://www.iitb.ac.in/academic/gmtec.jsp'),
+(2,	'mtech', 'private', 'http://www.iitb.ac.in/academic/mtectscholar.jsp'),
+(2,	'mtech', 'QIP Scholarship Teaching Assistantship', 'Rs. 2500/- p.m. for 24 months and Contingency Rs. 3000/- p.a.'),
+(2,	'msc', 'NBHM (National Board of Higher Mathematics)', 'Rs 4000/- p.m., Selection through NBHM directly'),
+(2,	'msc', 'DBT Scholarship', 'Rs 800/- p.m. , Selection through Department of Biotechnology'),
+(2,	'msc-phd', 'IIT', 'First 04 Semester Rs. 6,000/- p.m., First 5th to 8th Semester Rs. 16,000/- p.m., First 9th to 12th Semester Rs. 18,000/- p.m.'),
+(2,	'M.Tech/M.Phil/M.Des Teaching Assistantship', 'IIT', '8000 to 9000 p.m.'),
+(2,	'phd Teaching Assistantship', 'IIT','16000 to 22000 p.m. depending on qualification'),
+(2,	'phd','QIP Scholarship Teaching Assistantship','Rs. 6000/- for first 2 years and Rs. 6400/- for 3rd year and Contingency Rs. 10,000/- p.a'),
+(2,	'phd', 'private', 'http://www.iitb.ac.in/academic/phdscholar.jsp'),
+(2,	'phd', 'govt. of India', 'http://www.iitb.ac.in/academic/gphd.jsp');
 /*!40000 ALTER TABLE `scholarship` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -484,14 +472,11 @@ CREATE TABLE `studentstrength` (
 
 LOCK TABLES `studentstrength` WRITE;
 /*!40000 ALTER TABLE `studentstrength` DISABLE KEYS */;
-(1,
-'Undergraduates','2900',
-'Postgraduates','2700'
-),
-(2,
-'Undergraduates','3400',
-'Postgraduates','4600'
-);
+INSERT INTO `studentstrength` VALUES 
+(1,'Undergraduates','2900'),
+(1,'Postgraduates' ,'2700'),
+(2,'Undergraduates','3400'),
+(2,'Postgraduates' ,'4600');
 /*!40000 ALTER TABLE `studentstrength` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
