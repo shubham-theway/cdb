@@ -335,7 +335,8 @@ LOCK TABLES `links` WRITE;
 /*!40000 ALTER TABLE `links` DISABLE KEYS */;
 INSERT INTO `links` VALUES 
 (1,'www.iitd.ac.in','http://www.iitd.ac.in/content/map-and-location , https://tnp.iitd.ac.in/download/brochureiitd.pdf'),
-(2,'www.iitb.ac.in','http://www.iitb.ac.in/campus/campus.html , http://www.iitb.ac.in/about/InstituteBrochure.pdf');
+(2,'www.iitb.ac.in','http://www.iitb.ac.in/campus/campus.html , http://www.iitb.ac.in/about/InstituteBrochure.pdf'),
+(3,'www.iitm.ac.in','n/a');
 /*!40000 ALTER TABLE `links` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -402,7 +403,16 @@ INSERT INTO `placement` VALUES
 (2,'2013', 'dual' , '80',  'n/a',        'n/a'),
 (2,'2013', 'mtech', '70',  'n/a',        'n/a'),
 (2,'2013', 'msc'  , '50',  'n/a',        'n/a'),
-(2,'2013', 'total', '68',  '> 11 lakhs', '8 lakhs');
+(2,'2013', 'total', '68',  '> 11 lakhs', '8 lakhs'),
+(3,'2013', 'btech', '76.1',  '34.8 lakhs',        'n/a'),
+(3,'2013', 'dual' , '79.9',  'n/a',        'n/a'),
+(3,'2013', 'mtech', '59.6',  'n/a',        'n/a'),
+(3,'2013', 'mba'  , '81.8',  '14 lakhs',        'n/a'),
+(3,'2013', 'ma', '25',  'n/a',        'n/a'),
+(3,'2013', 'msc', '15.4',  '6.25 lakhs',        'n/a'),
+(3,'2013', 'ms', '53.8',  'n/a',        'n/a'),
+(3,'2013', 'phd', '21.1',  'n/a',        'n/a'),
+(3,'2013', 'total', '65.3',  'n/a',        'n/a');
 /*!40000 ALTER TABLE `placement` ENABLE KEYS */;
 UNLOCK TABLES;
 
